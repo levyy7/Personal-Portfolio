@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# app
+/portfolio-app
+
 # testing
 /coverage
 
