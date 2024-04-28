@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logo.png'
+
 import navIcon1 from '../assets/img/nav-icon1.svg'
-import navIcon2 from '../assets/img/nav-icon2.svg'
-import navIcon3 from '../assets/img/nav-icon3.svg'
+import { FiGithub } from "react-icons/fi";
+import { IconContext } from "react-icons";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -46,8 +47,11 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="#">
+                  <IconContext.Provider value={{ color: 'white', size: '18px'}}>
+                    <FiGithub />
+                  </IconContext.Provider>
+                </a>
               </div>
               <button className="vvd" onClick={() => console.log('connect')}>
                 <span>Contact Me</span>

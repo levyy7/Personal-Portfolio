@@ -40,7 +40,13 @@ export const Banner = () => {
       setDelta(500);
     }
   }
-
+/*
+  As a passionate Informatics Engineer studying at the Universitat Politécnica de Catalunya,
+  I specialize at solving complex problems and developing high-end innovative technologies. 
+  With a strong foundation in theoretical and practical Computer Science, I excel in designing and 
+  implementing software solutions. Eager to learn and grow, with a goal to contribute to society by 
+  participating in groundbreaking research and meaningful projects. 
+*/
   return (
     <section className="banner" id="home"> 
     <video src={vid1} autoPlay loop muted />
@@ -50,7 +56,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>{`Hi I'm Eneko `}<span className="wrap">{text}</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum elit vel quam sagittis, sed tristique lacus semper. Fusce et metus scelerisque, faucibus turpis vitae, rhoncus ante. Integer iaculis neque libero. Quisque consequat malesuada erat, quis eleifend eros tempus tincidunt. Maecenas convallis mattis velit, vitae ultricies dui ullamcorper gravida.</p>
+            <p>As a passionate Informatics Engineer studying at the Universitat Politécnica de Catalunya, I specialize at solving complex problems and developing high-end innovative technologies. With a strong foundation in theoretical and practical Computer Science, I excel in designing and implementing software solutions. Eager to learn and grow, with a goal to contribute to society by participating in groundbreaking research and meaningful projects. </p>
             <button onClick={() => console.log('connect')}>Contact Me <ArrowRightCircle size={25}/></button>
           </Col>
           <Col xs={12} md={6} xl={5}>
